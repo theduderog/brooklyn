@@ -28,7 +28,7 @@ public class KafkaZookeeperImpl extends AbstractZookeeperImpl implements KafkaZo
 
     private static final Logger log = LoggerFactory.getLogger(KafkaZookeeperImpl.class);
 
-    BasicAttributeSensorAndConfigKey<String> DOWNLOAD_URL = Kafka.DOWNLOAD_URL;
+    public static final BasicAttributeSensorAndConfigKey<String> DOWNLOAD_URL = Kafka.DOWNLOAD_URL;
 
     public KafkaZookeeperImpl() {
     }

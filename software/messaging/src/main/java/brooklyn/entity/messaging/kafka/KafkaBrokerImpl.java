@@ -44,7 +44,7 @@ public class KafkaBrokerImpl extends SoftwareProcessImpl implements MessageBroke
     private static final Logger log = LoggerFactory.getLogger(KafkaBrokerImpl.class);
     private static final ObjectName SOCKET_SERVER_STATS_MBEAN = JmxHelper.createObjectName("kafka:type=kafka.SocketServerStats");
 
-    BasicAttributeSensorAndConfigKey<String> DOWNLOAD_URL = Kafka.DOWNLOAD_URL;
+    public static final BasicAttributeSensorAndConfigKey<String> DOWNLOAD_URL = Kafka.DOWNLOAD_URL;
 
     private volatile JmxFeed jmxFeed;
 
